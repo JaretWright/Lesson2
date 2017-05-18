@@ -21,7 +21,7 @@
 
         //send the first name, last name and email to the database
         //Step 1 - connect to the database
-        $conn = new PDO('mysql:host=localhost','root','admin');
+        $conn = new PDO('mysql:host=localhost:dbname=php','root','admin');
         echo 'made established DB connection';
 
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
