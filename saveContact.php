@@ -21,7 +21,7 @@
 
         //send the first name, last name and email to the database
         //Step 1 - connect to the database
-        $conn = new PDO('mysql:host=aws.computerstudi.es;dbname=gc50018247','gc500182472','EInCI-ksZ_');
+        $conn = new PDO('mysql:host=localhost','root','admin');
         echo 'made established DB connection';
 
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
